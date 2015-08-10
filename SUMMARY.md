@@ -20,7 +20,7 @@
 * [idP 2 配置](idP2/README.md)
    * [认证配置](idp2/idpAuth.md)
 * [idP 3 配置](idP3/README.md)
-   * [认证配置](idp2/idpAuth.md)
+   * [认证配置](idp3/idpAuth.md)
 * [sp 配置](idP2/README.md)
    * [属性过滤器](sp/sp_attribute_map.md)
 
