@@ -19,7 +19,7 @@
    * [嵌入式 DS 安装](install/esp.md)
 * [idP 2 配置](idP2/README.md)
    * [认证配置](idp2/idpAuth.md)
-* [idP 3 配置](idP2/README.md)
+* [idP 3 配置](idP3/README.md)
    * [认证配置](idp2/idpAuth.md)
 * [sp 配置](idP2/README.md)
    * [属性过滤器](sp/sp_attribute_map.md)
