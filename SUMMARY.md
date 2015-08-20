@@ -14,6 +14,7 @@
 * [Shibboleth 安装](install/README.md)
    * [idP 2 安装](install/idP2.md)
    * [idP 3 安装](install/idP3.md)
+   * [从 idP2 更新至 idP3](install/idP2_upgrade_idP3.md)
    * [SP 安装](install/sp.md)
    * [集中式 DS 安装](install/cds.md)
    * [嵌入式 DS 安装](install/esp.md)
