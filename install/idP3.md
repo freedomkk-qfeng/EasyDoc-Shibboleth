@@ -33,4 +33,37 @@ idP V3.0不支持以下Idp的老版本配置：
 
 如果没有 metadata 的话，你可以在 [Testshib](http://www.testshib.org/) 上测试你的 idP。
 
+安装程序会为你建议或生成一些信息：
+- idP 的 entityID
+- 一对自签发的密钥和证书，用于：
+	- 消息传输的验证
+	- 默认的 https 通讯加密，使用8443端口
+	- 其他系统和 idP 的信息加密和解密
+- idP 自己加密 cookies 和其他数据的 密钥和密钥版本文件。（这是 java keystore 的格式 "JCEKS")
+- 基于这些信息产生的 idP 的默认配置
+
+#### linux 下安装
+
+Shibboleth idp 是一个标准的 Java web application，基于 Servlet 3.0 规范。你可以在所有兼容此规范的 Servlet 容器上运行 idP 。官方支持的版本是 Tomcat 和 Jetty，官方建议使用 Jetty，而我更喜欢 Tomcat。
+
+1. 下载 [idP](http://shibboleth.net/downloads/identity-provider/latest) 最新的版本
+2. 解压你下载的文件，例如 : 
+	```
+	unzip shibboleth-identityprovider-VERSION-bin.zip
+	```
+3. 进入解压的目录，例如：
+	```
+	cd shibboleth-identityprovider-VERSION
+	```
+4. 运行 ```./install.sh``` (linux) 或者 ```./install.bat``` (windows)
+	- idP 的安装目录，本文中以 idp.home代替
+5. 部署 idP 的 warfile。路径在  ```idp.home/war/idp.war```。后文会专门说明如何部署
+
+##### Rebuild idP warfile
+如果你要重新编译 idp warfie，运行 ```bin/build.sh``` 
+```bash
+opt/shibboleth-idp# bin/build.sh
+```
+
+#### Apache Tomcat 配置
 

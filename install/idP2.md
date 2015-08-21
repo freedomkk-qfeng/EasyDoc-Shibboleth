@@ -38,7 +38,7 @@ Shibboleth idp V2 的版本是一个标准的 Java web application，基于 Serv
 	```
 4. 运行 ```./install.sh``` (linux) 或者 ```./install.bat``` (windows)
 	- idP 的安装目录，本文中以 IDP_HOME 代替
-5. 部署你的 idP war 文件到 java 容器里，文件的位置在 ```IDP_HOME/war/```
+5. 部署你的 idP war 文件到 java 容器里，文件的位置在 ```IDP_HOME/war/idp.war```
 
 注意，idP 的 metadata 并不会在你修改了 idP 的配置后自动更新，你需要手动去更新这个
 
