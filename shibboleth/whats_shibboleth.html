@@ -1,0 +1,646 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>什么是 Shibboleth | Shibboleth简单部署文档</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.2.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../shibboleth/how_it_work.html" />
+    
+    
+    <link rel="prev" href="../shibboleth/index.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="1.1" data-basepath=".." data-revision="Mon Dec 07 2015 15:46:27 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        本书简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="shibboleth/index.html">
+            
+                
+                    <a href="../shibboleth/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Shibboleth 介绍
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter active" data-level="1.1" data-path="shibboleth/whats_shibboleth.html">
+            
+                
+                    <a href="../shibboleth/whats_shibboleth.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        什么是 Shibboleth
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="shibboleth/how_it_work.html">
+            
+                
+                    <a href="../shibboleth/how_it_work.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Shibboleth 的工作原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="shibboleth/sso.html">
+            
+                
+                    <a href="../shibboleth/sso.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        单点登录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="shibboleth/federated_sso.html">
+            
+                
+                    <a href="../shibboleth/federated_sso.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        联邦式的单点登录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="shibboleth/ds.html">
+            
+                
+                    <a href="../shibboleth/ds.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Discovery Service
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="shibboleth/attributes.html">
+            
+                
+                    <a href="../shibboleth/attributes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        用户属性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="shibboleth/metadata.html">
+            
+                
+                    <a href="../shibboleth/metadata.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        Metadata
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="shibboleth/profile.html">
+            
+                
+                    <a href="../shibboleth/profile.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        Profile
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="shibboleth/binding.html">
+            
+                
+                    <a href="../shibboleth/binding.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        Binding
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="install/index.html">
+            
+                
+                    <a href="../install/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Shibboleth 安装
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="install/idP2.html">
+            
+                
+                    <a href="../install/idP2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        idP 2 安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="install/idP3.html">
+            
+                
+                    <a href="../install/idP3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        idP 3 安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="install/idP2_upgrade_idP3.html">
+            
+                
+                    <a href="../install/idP2_upgrade_idP3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        从 idP2 更新至 idP3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="install/sp.html">
+            
+                
+                    <a href="../install/sp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        SP 安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="install/cds.html">
+            
+                
+                    <a href="../install/cds.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        集中式 DS 安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="install/esp.html">
+            
+                
+                    <a href="../install/esp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        嵌入式 DS 安装
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="idP2/index.html">
+            
+                
+                    <a href="../idP2/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        idP 2 配置
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="idP2/idpAuth.html">
+            
+                
+                    <a href="../idP2/idpAuth.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        用户认证配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="idP2/idpAttr.html">
+            
+                
+                    <a href="../idP2/idpAttr.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        属性获取配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="idP2/idpFilter.html">
+            
+                
+                    <a href="../idP2/idpFilter.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        属性过滤配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="idP2/idprely_party.html">
+            
+                
+                    <a href="../idP2/idprely_party.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        relying-party 配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="idP2/idpMetadata.html">
+            
+                
+                    <a href="../idP2/idpMetadata.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        idp 注册
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="idP3/index.html">
+            
+                
+                    <a href="../idP3/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        idP 3 配置
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="idP3/idpAuth.html">
+            
+                
+                    <a href="../idP3/idpAuth.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        认证配置
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="sp/index.html">
+            
+                
+                    <a href="../sp/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        sp 配置
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="sp/sp_attribute_map.html">
+            
+                
+                    <a href="../sp/sp_attribute_map.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        属性过滤器
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Shibboleth简单部署文档</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="%E4%BB%80%E4%B9%88%E6%98%AF-shibboleth">&#x4EC0;&#x4E48;&#x662F; Shibboleth</h1>
+<p>Shibboleth &#x662F;&#x4E00;&#x79CD;&#x6807;&#x51C6;&#x5316;&#x7684;&#x5F00;&#x6E90;&#x8F6F;&#x4EF6;&#xFF0C;&#x7528;&#x4E8E;&#x7EC4;&#x7EC7;&#x6210;&#x5458;&#x4E4B;&#x95F4;&#x901A;&#x8FC7;web&#x8FDB;&#x884C;&#x5355;&#x70B9;&#x767B;&#x5F55;&#x3002;Shibboleth &#x652F;&#x6301;&#x8282;&#x70B9;&#x4E4B;&#x95F4;&#x7684;&#x4E2A;&#x4F53;&#x5728;&#x8BBF;&#x95EE;&#x53D7;&#x4FDD;&#x62A4;&#x7684;&#x8D44;&#x6E90;&#x65F6;&#xFF0C;&#x63D0;&#x4F9B;&#x5B89;&#x5168;&#xFF0C;&#x9690;&#x79C1;&#x7684;&#x8EAB;&#x4EFD;&#x8BA4;&#x8BC1;&#x670D;&#x52A1;&#x3002;</p>
+<p>Shibboleth &#x7EC4;&#x4EF6;&#x5E7F;&#x6CDB;&#x7684;&#x7528;&#x4E8E;&#x7EC4;&#x7EC7;&#x8054;&#x76DF;&#x5185;&#x7684;&#x8BA4;&#x8BC1;&#xFF0C;&#x4E3B;&#x8981;&#x4F7F;&#x7528;SAML&#x8BED;&#x8A00;&#x6784;&#x5EFA;&#x8054;&#x76DF;&#x5185;&#x7684;&#x5355;&#x70B9;&#x767B;&#x5F55;&#x548C;&#x5C5E;&#x6027;&#x4EA4;&#x6362;&#x7684;&#x6846;&#x67B6;&#x3002;&#x5F53;&#x4E00;&#x4E2A;&#x7528;&#x6237;&#x5728;&#x4ED6;&#x81EA;&#x5DF1;&#x7684;&#x7EC4;&#x7EC7;&#xFF08;&#x5B50;&#x57DF;&#xFF09;&#x5185;&#x5B8C;&#x6210;&#x8BA4;&#x8BC1;&#x540E;&#xFF0C;&#x8FD9;&#x4E2A;&#x7EC4;&#x7EC7;&#xFF08;IDP&#xFF09;&#x5C06;&#x91CA;&#x653E;&#x5176;&#x6240;&#x5141;&#x8BB8;&#x6700;&#x5C0F;&#x8303;&#x56F4;&#x5185;&#x7684;&#x8EAB;&#x4EFD;&#x5C5E;&#x6027;&#x7ED9;&#x8D44;&#x6E90;&#x63D0;&#x4F9B;&#x8005;&#xFF08;SP&#xFF09;,&#x4ECE;&#x800C;&#x5141;&#x8BB8;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x8BBF;&#x95EE;&#x4E0A;SP&#x9762;&#x7684;&#x8D44;&#x6E90;&#x3002;Shibboleth &#x63D0;&#x4F9B;&#x53EF;&#x6269;&#x5C55;&#x7684;&#x9690;&#x79C1;&#x4FDD;&#x62A4;&#x529F;&#x80FD;&#xFF0C;&#x5373;&#x5141;&#x8BB8; IDP &#x81EA;&#x884C;&#x63A7;&#x5236;&#x5176;&#x91CA;&#x653E;&#x7ED9;&#x4E0D;&#x540C;SP&#x7684;&#x5C5E;&#x6027;&#x7C7B;&#x522B;&#x548C;&#x6570;&#x91CF;</p>
+<p>Shibboleth &#x9879;&#x76EE;&#x6700;&#x65E9;&#x5728; 2000 &#x5E74;&#x5728; Internet2 &#x4E0A;&#x6210;&#x7ACB;&#xFF0C;&#x4E4B;&#x540C;&#x5E74;&#x548C; SAML &#x5DE5;&#x4F5C;&#x7EC4;&#x5F00;&#x59CB;&#x5408;&#x4F5C;&#x3002; Shibboleth 1.0 &#x5728; 2003 &#x5E74;&#x53D1;&#x5E03;&#xFF0C;&#x5E76;&#x5F88;&#x5FEB;&#x7684;&#x5728;&#x6559;&#x80B2;&#x754C;&#x548C;&#x7814;&#x7A76;&#x673A;&#x6784;&#x5F97;&#x5230;&#x4E86;&#x63A8;&#x5E7F;&#x3002;&#x968F;&#x7740; 2005 &#x5E74; SAML2.0 &#x548C;&#x968F;&#x540E;Shibboleth 2.0 &#x7684;&#x53D1;&#x5E03;&#xFF0C;&#x7531; Shibboleth &#x5021;&#x5BFC;&#x7684; SAML &#x9010;&#x6E10;&#x6210;&#x4E3A;&#x591A;&#x8FB9;&#xFF0C;&#x5143;&#x6570;&#x636E;&#x9A71;&#x52A8;&#x65B9;&#x6CD5;&#x7684;&#x6807;&#x51C6;&#x3002;</p>
+<p>Shibboleth &#x662F;&#x4E00;&#x4E2A;&#x5F00;&#x6E90;&#x8F6F;&#x4EF6;&#x5E76;&#x5728; Apache &#x8F6F;&#x4EF6;&#x8BB8;&#x53EF;&#x8BC1;&#x4E0B;&#x53D1;&#x5E03;&#x3002;&#x66F4;&#x591A;&#x7684;&#x7EC4;&#x4EF6;&#x76F8;&#x5173;&#x4FE1;&#x606F;&#x53EF;&#x4EE5;&#x5728;&#x9879;&#x76EE;&#x7684;&#x76F8;&#x5173;&#x9875;&#x9762;&#x4E0A;&#x627E;&#x5230;&#x3002;&#xFF08;<a href="https://wiki.shibboleth.net/confluence/display/SHIB2/Home&#xFF09;" target="_blank">https://wiki.shibboleth.net/confluence/display/SHIB2/Home&#xFF09;</a></p>
+<p>Shibboleth&#xAE; &#x662F; Internet2&#xAE; &#x7684;&#x6CE8;&#x518C;&#x5546;&#x6807;</p>
+
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../shibboleth/index.html" class="navigation navigation-prev " aria-label="Previous page: Shibboleth 介绍"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../shibboleth/how_it_work.html" class="navigation navigation-next " aria-label="Next page: Shibboleth 的工作原理"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>

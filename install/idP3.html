@@ -1,0 +1,771 @@
+<!DOCTYPE HTML>
+<html lang="en" >
+    
+    <head>
+        
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <title>idP 3 安装 | Shibboleth简单部署文档</title>
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 2.2.0">
+        
+        
+        <meta name="HandheldFriendly" content="true"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-status-bar-style" content="black">
+        <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+        <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+        
+    <link rel="stylesheet" href="../gitbook/style.css">
+    
+    
+
+        
+    
+    
+    <link rel="next" href="../install/idP2_upgrade_idP3.html" />
+    
+    
+    <link rel="prev" href="../install/idP2.html" />
+    
+
+        
+    </head>
+    <body>
+        
+        
+    <div class="book" data-level="2.2" data-basepath=".." data-revision="Mon Dec 07 2015 15:46:27 GMT+0800 (CST)">
+    
+
+<div class="book-summary">
+    <div class="book-search">
+        <input type="text" placeholder="Type to search" class="form-control" />
+    </div>
+    <ul class="summary">
+        
+        
+        
+        
+
+        
+
+        
+    
+        <li class="chapter " data-level="0" data-path="index.html">
+            
+                
+                    <a href="../index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                        本书简介
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1" data-path="shibboleth/index.html">
+            
+                
+                    <a href="../shibboleth/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.</b>
+                        
+                        Shibboleth 介绍
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="1.1" data-path="shibboleth/whats_shibboleth.html">
+            
+                
+                    <a href="../shibboleth/whats_shibboleth.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.1.</b>
+                        
+                        什么是 Shibboleth
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="shibboleth/how_it_work.html">
+            
+                
+                    <a href="../shibboleth/how_it_work.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.2.</b>
+                        
+                        Shibboleth 的工作原理
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.3" data-path="shibboleth/sso.html">
+            
+                
+                    <a href="../shibboleth/sso.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.3.</b>
+                        
+                        单点登录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.4" data-path="shibboleth/federated_sso.html">
+            
+                
+                    <a href="../shibboleth/federated_sso.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.4.</b>
+                        
+                        联邦式的单点登录
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.5" data-path="shibboleth/ds.html">
+            
+                
+                    <a href="../shibboleth/ds.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.5.</b>
+                        
+                        Discovery Service
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.6" data-path="shibboleth/attributes.html">
+            
+                
+                    <a href="../shibboleth/attributes.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.6.</b>
+                        
+                        用户属性
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.7" data-path="shibboleth/metadata.html">
+            
+                
+                    <a href="../shibboleth/metadata.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.7.</b>
+                        
+                        Metadata
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.8" data-path="shibboleth/profile.html">
+            
+                
+                    <a href="../shibboleth/profile.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.8.</b>
+                        
+                        Profile
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="1.9" data-path="shibboleth/binding.html">
+            
+                
+                    <a href="../shibboleth/binding.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>1.9.</b>
+                        
+                        Binding
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="2" data-path="install/index.html">
+            
+                
+                    <a href="../install/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.</b>
+                        
+                        Shibboleth 安装
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="2.1" data-path="install/idP2.html">
+            
+                
+                    <a href="../install/idP2.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.1.</b>
+                        
+                        idP 2 安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="install/idP3.html">
+            
+                
+                    <a href="../install/idP3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.2.</b>
+                        
+                        idP 3 安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="install/idP2_upgrade_idP3.html">
+            
+                
+                    <a href="../install/idP2_upgrade_idP3.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.3.</b>
+                        
+                        从 idP2 更新至 idP3
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="install/sp.html">
+            
+                
+                    <a href="../install/sp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.4.</b>
+                        
+                        SP 安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="install/cds.html">
+            
+                
+                    <a href="../install/cds.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.5.</b>
+                        
+                        集中式 DS 安装
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="install/esp.html">
+            
+                
+                    <a href="../install/esp.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>2.6.</b>
+                        
+                        嵌入式 DS 安装
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="3" data-path="idP2/index.html">
+            
+                
+                    <a href="../idP2/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.</b>
+                        
+                        idP 2 配置
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="3.1" data-path="idP2/idpAuth.html">
+            
+                
+                    <a href="../idP2/idpAuth.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.1.</b>
+                        
+                        用户认证配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="idP2/idpAttr.html">
+            
+                
+                    <a href="../idP2/idpAttr.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.2.</b>
+                        
+                        属性获取配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="idP2/idpFilter.html">
+            
+                
+                    <a href="../idP2/idpFilter.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.3.</b>
+                        
+                        属性过滤配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="idP2/idprely_party.html">
+            
+                
+                    <a href="../idP2/idprely_party.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.4.</b>
+                        
+                        relying-party 配置
+                    </a>
+            
+            
+        </li>
+    
+        <li class="chapter " data-level="3.5" data-path="idP2/idpMetadata.html">
+            
+                
+                    <a href="../idP2/idpMetadata.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>3.5.</b>
+                        
+                        idp 注册
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="4" data-path="idP3/index.html">
+            
+                
+                    <a href="../idP3/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.</b>
+                        
+                        idP 3 配置
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.1" data-path="idP3/idpAuth.html">
+            
+                
+                    <a href="../idP3/idpAuth.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>4.1.</b>
+                        
+                        认证配置
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+        <li class="chapter " data-level="5" data-path="sp/index.html">
+            
+                
+                    <a href="../sp/index.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.</b>
+                        
+                        sp 配置
+                    </a>
+            
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="5.1" data-path="sp/sp_attribute_map.html">
+            
+                
+                    <a href="../sp/sp_attribute_map.html">
+                
+                        <i class="fa fa-check"></i>
+                        
+                            <b>5.1.</b>
+                        
+                        属性过滤器
+                    </a>
+            
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+
+        
+        <li class="divider"></li>
+        <li>
+            <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+                Published with GitBook
+            </a>
+        </li>
+        
+    </ul>
+</div>
+
+    <div class="book-body">
+        <div class="body-inner">
+            <div class="book-header">
+    <!-- Actions Left -->
+    <a href="#" class="btn pull-left toggle-summary" aria-label="Table of Contents"><i class="fa fa-align-justify"></i></a>
+    <a href="#" class="btn pull-left toggle-search" aria-label="Search"><i class="fa fa-search"></i></a>
+    
+    <div id="font-settings-wrapper" class="dropdown pull-left">
+        <a href="#" class="btn toggle-dropdown" aria-label="Font Settings"><i class="fa fa-font"></i>
+        </a>
+        <div class="dropdown-menu font-settings">
+    <div class="dropdown-caret">
+        <span class="caret-outer"></span>
+        <span class="caret-inner"></span>
+    </div>
+
+    <div class="buttons">
+        <button type="button" id="reduce-font-size" class="button size-2">A</button>
+        <button type="button" id="enlarge-font-size" class="button size-2">A</button>
+    </div>
+
+    <div class="buttons font-family-list">
+        <button type="button" data-font="0" class="button">Serif</button>
+        <button type="button" data-font="1" class="button">Sans</button>
+    </div>
+
+    <div class="buttons color-theme-list">
+        <button type="button" id="color-theme-preview-0" class="button size-3" data-theme="0">White</button>
+        <button type="button" id="color-theme-preview-1" class="button size-3" data-theme="1">Sepia</button>
+        <button type="button" id="color-theme-preview-2" class="button size-3" data-theme="2">Night</button>
+    </div>
+</div>
+
+    </div>
+
+    <!-- Actions Right -->
+    
+    <div class="dropdown pull-right">
+        <a href="#" class="btn toggle-dropdown" aria-label="Share"><i class="fa fa-share-alt"></i>
+        </a>
+        <div class="dropdown-menu font-settings dropdown-left">
+            <div class="dropdown-caret">
+                <span class="caret-outer"></span>
+                <span class="caret-inner"></span>
+            </div>
+            <div class="buttons">
+                <button type="button" data-sharing="twitter" class="button">
+                    Share on Twitter
+                </button>
+                <button type="button" data-sharing="google-plus" class="button">
+                    Share on Google
+                </button>
+                <button type="button" data-sharing="facebook" class="button">
+                    Share on Facebook
+                </button>
+                <button type="button" data-sharing="weibo" class="button">
+                    Share on Weibo
+                </button>
+                <button type="button" data-sharing="instapaper" class="button">
+                    Share on Instapaper
+                </button>
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <a href="#" target="_blank" class="btn pull-right google-plus-sharing-link sharing-link" data-sharing="google-plus" aria-label="Google"><i class="fa fa-google-plus"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right facebook-sharing-link sharing-link" data-sharing="facebook" aria-label="Facebook"><i class="fa fa-facebook"></i></a>
+    
+    
+    <a href="#" target="_blank" class="btn pull-right twitter-sharing-link sharing-link" data-sharing="twitter" aria-label="Twitter"><i class="fa fa-twitter"></i></a>
+    
+    
+    
+
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="../" >Shibboleth简单部署文档</a>
+    </h1>
+</div>
+
+            <div class="page-wrapper" tabindex="-1">
+                <div class="page-inner">
+                
+                
+                    <section class="normal" id="section-">
+                    
+                        <h1 id="idp-3-%E5%AE%89%E8%A3%85">idP 3 &#x5B89;&#x88C5;</h1>
+<h2 id="%E7%8E%AF%E5%A2%83%E9%9C%80%E6%B1%82">&#x73AF;&#x5883;&#x9700;&#x6C42;</h2>
+<ul>
+<li>Oracle Jave&#x6216;&#x8005;OpenJDK 7&#x6216;8&#xFF0C;&#x9700;&#x4E0B;&#x8F7D;&#x5BF9;&#x5E94;&#x7684;the Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files &#x6587;&#x4EF6;&#x3002;&#x867D;&#x7136;JRE&#x53EF;&#x80FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;&#xFF0C;&#x4F46;&#x662F;&#x672C;&#x7248;&#x672C;&#x53EA;&#x652F;&#x6301;JDK&#x3002;</li>
+<li>&#x9700;&#x8981;&#x652F;&#x6301;Servlet API 3.0 &#x7684;Servlet&#x5BB9;&#x5668;<ul>
+<li>Tomcat7+</li>
+<li>Jetty8+</li>
+</ul>
+</li>
+<li>&#x6B63;&#x5F0F;&#x652F;&#x6301;&#x7684;&#x7248;&#x672C; Tomcat 8.x&#x548C;Jetty 9.2.x&#xFF0C;&#x5C3D;&#x7BA1;&#x4E0A;&#x6587;&#x6709;&#x63D0;&#x53CA;Tomcat7&#x7B49;&#x8001;&#x7248;&#x672C;&#xFF0C;&#x4F46;&#x5E76;&#x6CA1;&#x6709;&#x5BF9;&#x4EE5;&#x4E0A;&#x7248;&#x672C;&#x8FDB;&#x884C;&#x6D4B;&#x8BD5;&#xFF0C;&#x4E5F;&#x672A;&#x5728;&#x6848;&#x4F8B;&#x4E2D;&#x63D0;&#x53CA;&#x3002;</li>
+<li>&#x7531;&#x4E8E;&#x6838;&#x5FC3;&#x6280;&#x672F;&#x56E2;&#x961F;&#x662F;&#x4EE5;Jetty&#x5E73;&#x53F0;&#x8FDB;&#x884C;&#x5F00;&#x53D1;&#x6D4B;&#x8BD5;&#x7684;&#xFF0C;&#x56E0;&#x6B64;&#x5B98;&#x65B9;&#x63A8;&#x8350;&#x4F7F;&#x7528;Jetty 9 &#x5BB9;&#x5668;&#xFF0C;&#x7B14;&#x8005;&#x4E2A;&#x4EBA;&#x4F9D;&#x7136;&#x503E;&#x5411;&#x4E8E;&#x4F7F;&#x7528;&#x66F4;&#x4E3A;&#x719F;&#x6089;&#x7684; Tomcat8&#x3002;</li>
+<li>&#x65E0;&#x64CD;&#x4F5C;&#x7CFB;&#x7EDF;&#x9650;&#x5236;&#xFF0C;&#x4F46;&#x63A8;&#x8350;&#x4F7F;&#x7528;Linux, OS X &#x548C; Windows&#x3002;</li>
+</ul>
+<h4 id="%E7%89%B9%E5%88%AB%E6%B3%A8%E6%84%8F">&#x7279;&#x522B;&#x6CE8;&#x610F;</h4>
+<ul>
+<li>Ret hat/CentOS &#x4E00;&#x4E9B;&#x8001;&#x7684;&#x7248;&#x672C;&#x91CC;&#xFF0C;&#x9ED8;&#x8BA4;&#x4F7F;&#x7528;&#x7684; GNU Java &#x7F16;&#x8BD1;&#x7684;VM(gcj)&#x3002;&#x8FD9;&#x662F;&#x4E0D;&#x652F;&#x6301;&#x7684;&#xFF0C;&#x8BF7;&#x52A1;&#x5FC5;&#x91CD;&#x65B0;&#x5B89;&#x88C5;&#x5176;&#x4ED6;&#x7684;JVM&#xFF08;&#x6BD4;&#x5982; Oracle jdk&#xFF09;</li>
+<li>&#x5173;&#x4E8E; openjdk&#xFF0C;&#x6211;&#x4EEC;&#x8FD8;&#x662F;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528; Oracle &#x5B98;&#x65B9;&#x7684;&#x6807;&#x51C6; jdk&#x3002;openjdk &#x6709;&#x65F6;&#x5019;&#x4F1A;&#x6709;&#x4E9B;&#x610F;&#x6599;&#x4E4B;&#x5916;&#x7684;&#x95EE;&#x9898;&#xFF0C;&#x6BD4;&#x5982;&#x5185;&#x5B58;&#x6CC4;&#x6F0F;&#xFF0C;&#x6BD4;&#x5982;&#x4E0A;&#x9762; Debian &#x7684;&#x95EE;&#x9898;&#x3002;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x731C;&#x5230;&#x5230;&#x5BF9;&#x4EFB;&#x4F55;&#x83AB;&#x540D;&#x5176;&#x5999;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x91CA;&#x90FD;&#x5C06;&#x6307;&#x5411;&#x5728;&#x5728;Oracle&#x7684;JVM&#x4E0A;&#x91CD;&#x65B0;&#x90E8;&#x7F72;&#x3002;</li>
+</ul>
+<h4 id="%E4%B8%8D%E6%94%AF%E6%8C%81%E7%9A%84%E7%89%88%E6%9C%AC">&#x4E0D;&#x652F;&#x6301;&#x7684;&#x7248;&#x672C;</h4>
+<p>idP V3.0&#x4E0D;&#x652F;&#x6301;&#x4EE5;&#x4E0B;Idp&#x7684;&#x8001;&#x7248;&#x672C;&#x914D;&#x7F6E;&#xFF1A;</p>
+<ul>
+<li>Java6&#x6216;&#x66F4;&#x65E9;&#x7684;&#x7248;&#x672C;.</li>
+<li>&#x4E0D;&#x652F;&#x6301;Java Cryptography Extension (JCE) Unlimited Strength Jurisdiction Policy Files.</li>
+<li>Tomcat6&#x6216;&#x66F4;&#x65E9;&#x7248;&#x672C;&#x3002;&#x8BF7;&#x6CE8;&#x610F;&#x5982;&#x7CFB;&#x7EDF;&#x5DF2;&#x5B89;&#x88C5;&#x4E86;RHEL5&#x6216;RHEL6&#xFF08;RHEL5&#x9884;&#x88C5;&#x7684;&#x662F;Tomcat5&#xFF0C;RHEL6&#x9884;&#x88C5;&#x7684;&#x662F;Tomcat6&#xFF09;&#xFF0C;&#x5728;&#x5B89;&#x88C5;Idp 3.0&#x65F6;&#xFF0C;&#x5219;&#x9700;&#x8981;&#x5148;&#x5B89;&#x88C5;RHEL7&#x7684;&#x4E00;&#x4E2A;&#x53EF;&#x9009;&#x5E94;&#x7528;&#x5BB9;&#x5668;&#xFF0C;&#x8FD9;&#x6837;&#x624D;&#x80FD;&#x53EF;&#x4EE5;&#x4F7F;&#x7528;Tomcat7&#xFF08;&#x56E0;&#x6B64;&#x6211;&#x4EEC;&#x63A8;&#x8350;&#x76F4;&#x63A5;&#x4F7F;&#x7528;Tomcat8&#xFF09;.</li>
+<li>Jetty7&#x6216;&#x66F4;&#x65E9;&#x7684;&#x7248;&#x672C;.</li>
+</ul>
+<h2 id="%E5%AE%89%E8%A3%85">&#x5B89;&#x88C5;</h2>
+<h4 id="%E5%87%86%E5%A4%87%E5%B7%A5%E4%BD%9C">&#x51C6;&#x5907;&#x5DE5;&#x4F5C;</h4>
+<ul>
+<li>&#x4E00;&#x5F20; SSL &#x8BC1;&#x4E66;&#x4EE5;&#x5F00;&#x542F; idP &#x7684; https &#x8BBF;&#x95EE;</li>
+<li>&#x7528;&#x4E8E;&#x8868;&#x793A;&#x4F60; idP &#x7684; entityID&#xFF0C;&#x5B89;&#x88C5;&#x7A0B;&#x5E8F;&#x9ED8;&#x8BA4;&#x4F1A;&#x4F7F;&#x7528;&#x4F60;&#x7684; hostname&#x3002;</li>
+<li>&#x4F60;&#x7684; DNS &#x5B50;&#x57DF;&#xFF0C;&#x7528;&#x4E8E;&#x8FFD;&#x52A0;&#x751F;&#x6210; &quot;scope&quot; &#x5C5E;&#x6027;&#xFF0C;&#x6BD4;&#x5982;&#x6839;&#x636E;&#x4F60;&#x7684;&#x7528;&#x6237;&#x540D;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x90AE;&#x4EF6;&#x5730;&#x5740;&#xFF08;&#x5728;&#x7528;&#x6237;&#x540D;&#x540E;&#x8FFD;&#x52A0;@xxx.edu.cn&#xFF0C;&#x8BF4;&#x8001;&#x5B9E;&#x8BDD;&#x6211;&#x89C9;&#x5F97;&#x8FD9;&#x6CA1;&#x4EC0;&#x4E48;&#x5375;&#x7528;&#xFF09;</li>
+<li>&#x4E00;&#x4E2A; metadata &#x7684;&#x83B7;&#x53D6;&#x6E90;&#xFF0C;&#x7528;&#x4E8E;&#x548C;&#x4E92;&#x4FE1;&#x7684; sp &#x8FDB;&#x884C;&#x901A;&#x8BAF;&#x3002;&#x901A;&#x5E38;&#x4F60;&#x53EF;&#x4EE5;&#x5411;&#x8054;&#x76DF;&#x7684;&#x7BA1;&#x7406;&#x65B9;&#x53BB;&#x54A8;&#x8BE2;&#x8FD9;&#x4E2A;&#xFF0C;&#x6216;&#x8005;&#x4F60;&#x4E5F;&#x53EF;&#x4EE5;&#x624B;&#x52A8;&#x521B;&#x5EFA;&#x81EA;&#x5DF1;&#x7684; metadata&#x3002;</li>
+</ul>
+<p>&#x5982;&#x679C;&#x6CA1;&#x6709; metadata &#x7684;&#x8BDD;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728; <a href="http://www.testshib.org/" target="_blank">Testshib</a> &#x4E0A;&#x6D4B;&#x8BD5;&#x4F60;&#x7684; idP&#x3002;</p>
+<p>&#x5B89;&#x88C5;&#x7A0B;&#x5E8F;&#x4F1A;&#x4E3A;&#x4F60;&#x5EFA;&#x8BAE;&#x6216;&#x751F;&#x6210;&#x4E00;&#x4E9B;&#x4FE1;&#x606F;&#xFF1A;</p>
+<ul>
+<li>idP &#x7684; entityID</li>
+<li>&#x4E00;&#x5BF9;&#x81EA;&#x7B7E;&#x53D1;&#x7684;&#x5BC6;&#x94A5;&#x548C;&#x8BC1;&#x4E66;&#xFF0C;&#x7528;&#x4E8E;&#xFF1A;<ul>
+<li>&#x6D88;&#x606F;&#x4F20;&#x8F93;&#x7684;&#x9A8C;&#x8BC1;</li>
+<li>&#x9ED8;&#x8BA4;&#x7684; https &#x901A;&#x8BAF;&#x52A0;&#x5BC6;&#xFF0C;&#x4F7F;&#x7528;8443&#x7AEF;&#x53E3;</li>
+<li>&#x5176;&#x4ED6;&#x7CFB;&#x7EDF;&#x548C; idP &#x7684;&#x4FE1;&#x606F;&#x52A0;&#x5BC6;&#x548C;&#x89E3;&#x5BC6;</li>
+</ul>
+</li>
+<li>idP &#x81EA;&#x5DF1;&#x52A0;&#x5BC6; cookies &#x548C;&#x5176;&#x4ED6;&#x6570;&#x636E;&#x7684; &#x5BC6;&#x94A5;&#x548C;&#x5BC6;&#x94A5;&#x7248;&#x672C;&#x6587;&#x4EF6;&#x3002;&#xFF08;&#x8FD9;&#x662F; java keystore &#x7684;&#x683C;&#x5F0F; &quot;JCEKS&quot;)</li>
+<li>&#x57FA;&#x4E8E;&#x8FD9;&#x4E9B;&#x4FE1;&#x606F;&#x4EA7;&#x751F;&#x7684; idP &#x7684;&#x9ED8;&#x8BA4;&#x914D;&#x7F6E;</li>
+</ul>
+<h4 id="linux-%E4%B8%8B%E5%AE%89%E8%A3%85">linux &#x4E0B;&#x5B89;&#x88C5;</h4>
+<p>Shibboleth idp &#x662F;&#x4E00;&#x4E2A;&#x6807;&#x51C6;&#x7684; Java web application&#xFF0C;&#x57FA;&#x4E8E; Servlet 3.0 &#x89C4;&#x8303;&#x3002;&#x4F60;&#x53EF;&#x4EE5;&#x5728;&#x6240;&#x6709;&#x517C;&#x5BB9;&#x6B64;&#x89C4;&#x8303;&#x7684; Servlet &#x5BB9;&#x5668;&#x4E0A;&#x8FD0;&#x884C; idP &#x3002;&#x5B98;&#x65B9;&#x652F;&#x6301;&#x7684;&#x7248;&#x672C;&#x662F; Tomcat &#x548C; Jetty&#xFF0C;&#x5B98;&#x65B9;&#x5EFA;&#x8BAE;&#x4F7F;&#x7528; Jetty&#xFF0C;&#x800C;&#x6211;&#x66F4;&#x559C;&#x6B22; Tomcat&#x3002;</p>
+<ol>
+<li>&#x4E0B;&#x8F7D; <a href="http://shibboleth.net/downloads/identity-provider/latest" target="_blank">idP</a> &#x6700;&#x65B0;&#x7684;&#x7248;&#x672C;</li>
+<li>&#x89E3;&#x538B;&#x4F60;&#x4E0B;&#x8F7D;&#x7684;&#x6587;&#x4EF6;&#xFF0C;&#x4F8B;&#x5982; : <pre><code> unzip shibboleth-identityprovider-VERSION-bin.zip
+</code></pre></li>
+<li>&#x8FDB;&#x5165;&#x89E3;&#x538B;&#x7684;&#x76EE;&#x5F55;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;<pre><code> cd shibboleth-identityprovider-VERSION
+</code></pre></li>
+<li>&#x8FD0;&#x884C; <code>./install.sh</code> (linux) &#x6216;&#x8005; <code>./install.bat</code> (windows)<ul>
+<li>idP &#x7684;&#x5B89;&#x88C5;&#x76EE;&#x5F55;&#xFF0C;&#x672C;&#x6587;&#x4E2D;&#x4EE5; idp.home&#x4EE3;&#x66FF;</li>
+</ul>
+</li>
+<li>&#x90E8;&#x7F72; idP &#x7684; warfile&#x3002;&#x8DEF;&#x5F84;&#x5728;  <code>idp.home/war/idp.war</code>&#x3002;&#x540E;&#x6587;&#x4F1A;&#x4E13;&#x95E8;&#x8BF4;&#x660E;&#x5982;&#x4F55;&#x90E8;&#x7F72;</li>
+</ol>
+<h5 id="rebuild-idp-warfile">Rebuild idP warfile</h5>
+<p>&#x5982;&#x679C;&#x4F60;&#x8981;&#x91CD;&#x65B0;&#x7F16;&#x8BD1; idp warfie&#xFF0C;&#x8FD0;&#x884C; <code>bin/build.sh</code> </p>
+<pre><code class="lang-bash">opt/shibboleth-idp<span class="hljs-comment"># bin/build.sh</span>
+</code></pre>
+<h4 id="apache-tomcat-%E9%85%8D%E7%BD%AE">Apache Tomcat &#x914D;&#x7F6E;</h4>
+<h5 id="%E5%9F%BA%E6%9C%AC%E8%AF%B4%E6%98%8E">&#x57FA;&#x672C;&#x8BF4;&#x660E;</h5>
+<p>&#x672C;&#x6587;&#x4E2D;&#xFF0C;idp.home &#x6307;&#x4EE3; idP &#x7684;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;&#xFF0C;TOMCAT_HOME &#x6307;&#x4EE3; Tomcat &#x7684;&#x5B89;&#x88C5;&#x8DEF;&#x5F84;</p>
+<p>&#x6240;&#x6709; Tomcat8 &#x7684;&#x7248;&#x672C;&#x90FD;&#x53EF;&#x4EE5;&#x7528;&#xFF0C;&#x5F53;&#x7136;&#x6700;&#x597D;&#x8FD8;&#x662F;&#x7528;<a href="http://tomcat.apache.org/download-80.cgi" target="_blank">&#x6700;&#x65B0;&#x7684;&#x7248;&#x672C;</a></p>
+<h5 id="%E5%BF%85%E9%A1%BB%E8%B0%83%E6%95%B4%E7%9A%84%E9%85%8D%E7%BD%AE">&#x5FC5;&#x987B;&#x8C03;&#x6574;&#x7684;&#x914D;&#x7F6E;</h5>
+<p>&#x5728; idP3 &#x4E2D;&#xFF0C;&#x4F60;&#x5FC5;&#x987B;&#x6307;&#x5B9A; Tomcat &#x53BB;&#x8BFB;&#x53D6; idP &#x7684; warfile&#x3002;&#x521B;&#x5EFA; <code>TOMCAT_HOME/conf/Catalina/localhost/idp.xml</code>&#x6587;&#x4EF6;&#xFF0C;&#x590D;&#x5236;&#x4EE5;&#x4E0B;&#x5185;&#x5BB9;&#x3002;&#xFF08;&#x6CE8;&#x610F;&#x66FF;&#x6362; idp.home &#x4E3A;&#x4F60;&#x81EA;&#x5DF1;&#x7684; idP &#x5B89;&#x88C5;&#x8DEF;&#x5F84;&#xFF09;</p>
+<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">Context</span> <span class="hljs-attribute">docBase</span>=<span class="hljs-value">&quot;idp.home/war/idp.war&quot;</span>
+         <span class="hljs-attribute">privileged</span>=<span class="hljs-value">&quot;true&quot;</span>
+         <span class="hljs-attribute">antiResourceLocking</span>=<span class="hljs-value">&quot;false&quot;</span>
+         <span class="hljs-attribute">swallowOutput</span>=<span class="hljs-value">&quot;true&quot;</span> /&gt;</span>
+</code></pre>
+<ul>
+<li>Tomcat &#x9ED8;&#x8BA4;&#x76D1;&#x542C; 8080 &#x548C; 8443 &#x7AEF;&#x53E3;&#x3002;&#x4E00;&#x822C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x628A;&#x4ED6;&#x6539;&#x6210; 80 &#x548C; 443&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x5728;<code>TOMCAT_HOME/conf/server.xml</code>&#x4FEE;&#x6539;&#x8FD9;&#x4E2A;&#x3002;&#x672C;&#x6587;&#x793A;&#x4F8B;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x7528; apache &#x6765;&#x4EE3;&#x7406; Tomcat&#xFF0C;&#x6240;&#x4EE5;&#x4E0D;&#x53BB;&#x7BA1;&#x5B83;&#x3002;</li>
+<li>&#x6DFB;&#x52A0;&#x4EE5;&#x4E0B;&#x53C2;&#x6570;&#x5230; CATALINA_OPTS &#x7684;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;&#x5728; Linux &#x4E0B;&#xFF0C;&#x53EF;&#x4EE5;&#x5728; Tomcat &#x7684; bin/ &#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA; setenv.sh &#x6765;&#x81EA;&#x52A8;&#x6DFB;&#x52A0;&#x73AF;&#x5883;&#x53D8;&#x91CF;&#x3002;<ul>
+<li><code>-Didp.home=&lt;location&gt;</code> <location> &#x66FF;&#x6362;&#x4E3A;&#x4F60;&#x5B9E;&#x9645;&#x7684;&#x8DEF;&#x5F84;</location></li>
+<li><code>-Xmx512m</code> &#x8FD9;&#x91CC;&#x914D;&#x7F6E;&#x4E86;&#x4F60; Tomcat &#x6240;&#x5141;&#x8BB8;&#x4F7F;&#x7528;&#x7684;&#x6700;&#x5927;&#x5185;&#x5B58;&#xFF0C;&#x5EFA;&#x8BAE;&#x81F3;&#x5C11; 512M</li>
+<li><code>-XX:MaxPermSize=128m</code> JVM&#x6700;&#x5927;&#x5141;&#x8BB8;&#x5206;&#x914D;&#x7684;&#x975E;&#x5806;&#x5185;&#x5B58;&#xFF0C;&#x6309;&#x9700;&#x5206;&#x914D;</li>
+<li>v3.12&#x4EE5;&#x540E;&#x7684;&#x7248;&#x672C;&#x4E2D;&#xFF0C;idp.home &#x4E5F;&#x53EF;&#x4EE5;&#x901A;&#x8FC7; web.xml &#x6765;&#x6307;&#x5B9A;&#x3002;&#x5728; edit-webapp &#x76EE;&#x5F55;&#x4E0B;&#x521B;&#x5EFA;web.xml&#xFF0C;&#x7136;&#x540E;&#x91CD;&#x65B0; build idp.war&#xFF08;&#x672A;&#x6D4B;&#x8BD5;&#xFF09;<pre><code class="lang-xml"><span class="hljs-tag">&lt;<span class="hljs-title">context-param</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">param-name</span>&gt;</span>idp.home<span class="hljs-tag">&lt;/<span class="hljs-title">param-name</span>&gt;</span>
+<span class="hljs-tag">&lt;<span class="hljs-title">param-value</span>&gt;</span>/opt/idp<span class="hljs-tag">&lt;/<span class="hljs-title">param-value</span>&gt;</span>
+<span class="hljs-tag">&lt;/<span class="hljs-title">context-param</span>&gt;</span>
+</code></pre>
+</li>
+</ul>
+</li>
+<li>Tomcat &#x9ED8;&#x8BA4;&#x6CA1;&#x6709;&#x63D0;&#x4F9B; Java Server Tag Library&#xFF0C;&#x8FD9;&#x4F7F;&#x5F97; idP3 &#x7684; status &#x9875;&#x9762;&#x65E0;&#x6CD5;&#x663E;&#x793A;&#x3002;&#x89E3;&#x51B3;&#x7684;&#x529E;&#x6CD5;&#x662F;&#x4E0B;&#x8F7D; <a href="https://build.shibboleth.net/nexus/service/local/repositories/thirdparty/content/javax/servlet/jstl/1.2/jstl-1.2.jar" target="_blank">jstl&#x7684;jar&#x5305;</a>&#xFF0C;&#x7136;&#x540E;&#x653E;&#x5728; TOMCAT_HOME/lib &#x5185;&#xFF0C;&#x91CD;&#x542F; Tomcat &#x5373;&#x53EF;&#x3002;</li>
+</ul>
+<h5 id="%E5%BB%BA%E8%AE%AE%E7%9A%84%E9%85%8D%E7%BD%AE%E8%B0%83%E6%95%B4">&#x5EFA;&#x8BAE;&#x7684;&#x914D;&#x7F6E;&#x8C03;&#x6574;</h5>
+<ul>
+<li>&#x9650;&#x5236; Post &#x8868;&#x5355;&#x7684;&#x5927;&#x5C0F;&#x3002;&#x5728; Tomact &#x7684; Connector &#x4E2D;&#xFF08;AJP &#x7684;&#x6216;&#x8005; http &#x7684;&#xFF09;&#x914D;&#x7F6E; maxPostSize&#x53C2;&#x6570;&#x3002;100K(100000)&#x662F;&#x4E00;&#x4E2A;&#x76F8;&#x5BF9;&#x6BD4;&#x8F83;&#x5408;&#x7406;&#x7684;&#x6570;&#x503C;&#x3002;</li>
+<li>&#x5173;&#x6389; Tomcat &#x7684;&#x4F1A;&#x8BDD;&#x4FDD;&#x6301;&#x3002;&#x5728; <code>TOMCAT_HOME/conf/context.xml</code>&#x4E2D;&#x53D6;&#x6D88; <code>&lt;Manager pathname=&quot;&quot; /&gt;</code> &#x7684;&#x6CE8;&#x91CA;&#x3002;&#x8FD9;&#x53EF;&#x4EE5;&#x9632;&#x6B62;&#x5728;&#x5BB9;&#x5668;&#x5173;&#x95ED;&#x65F6;&#xFF0C;idP &#x7684;&#x4F1A;&#x8BDD;&#x9519;&#x8BEF;&#x3002;&#x6CA1;&#x5FC5;&#x8981;&#x901A;&#x8FC7; Tomcat &#x6765;&#x4E3A; idP &#x96C6;&#x7FA4;&#x505A;&#x4F1A;&#x8BDD;&#x4FDD;&#x6301;&#x3002; </li>
+</ul>
+<h4 id="%E4%BD%BF%E7%94%A8%E5%8F%8D%E5%90%91%E4%BB%A3%E7%90%86">&#x4F7F;&#x7528;&#x53CD;&#x5411;&#x4EE3;&#x7406;</h4>
+<p>idP &#x90E8;&#x7F72;&#x5728; tomcat &#x4E0A;&#xFF0C;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E; http &#x5BF9; tomcat &#x7684;&#x4EE3;&#x7406;&#xFF0C;&#x4EE5;&#x4FBF;&#x4E8E;&#x7EF4;&#x62A4;&#x548C;&#x589E;&#x5F3A;&#x6269;&#x5C55;&#x6027;&#x3002;
+&#x8FD9;&#x91CC;&#x4EE5; CentOS6 &#x4E0B; &#x4F7F;&#x7528; apache &#x505A; ajp &#x53CD;&#x5411;&#x4EE3;&#x7406;&#x4E3A;&#x4F8B;</p>
+<p>&#x53D6;&#x6D88; tomcat &#x7684; AJP &#x8EAB;&#x4EFD;&#x8BA4;&#x8BC1;&#xFF08;&#x5982;&#x679C;&#x9700;&#x8981;&#x7684;&#x8BDD;&#xFF09;
+&#x4FEE;&#x6539;<code>TOMCAT_HOME/conf/server.xml</code>
+&#x5728; <code>&lt;!-- Define an AJP 1.3 Connector on port 8009 --&gt;</code>&#x4E0B;&#x589E;&#x52A0;</p>
+<pre><code class="lang-xml">request.tomcatAuthentication=&quot;false&quot; address=&quot;127.0.0.1&quot;
+</code></pre>
+<p>&#x914D;&#x7F6E; apache &#x7684; ajp &#x53CD;&#x5411;&#x4EE3;&#x7406;
+&#x4FEE;&#x6539; httpd.conf
+<code>ProxyPass /idp/ ajp://localhost:8009/idp</code></p>
+<h4 id="%E9%83%A8%E7%BD%B2-ssl-%E8%AF%81%E4%B9%A6">&#x90E8;&#x7F72; ssl &#x8BC1;&#x4E66;</h4>
+<p>&#x5728; apache &#x4E0A;&#x90E8;&#x7F72; ssl &#x8BC1;&#x4E66;&#x53EF;&#x6BD4; tomcat &#x5BB9;&#x6613;&#x591A;&#x4E86;</p>
+<p>&#x67E5;&#x770B;<code>/etc/httpd/conf.d/ssl.conf</code>
+&#x5728;&#x5BF9;&#x5E94;&#x8DEF;&#x5F84;&#x4E0B;&#x90E8;&#x7F72;&#x8BC1;&#x4E66;</p>
+<h4 id="idp-%E7%8A%B6%E6%80%81%E7%9A%84%E6%9F%A5%E7%9C%8B">idP &#x72B6;&#x6001;&#x7684;&#x67E5;&#x770B;</h4>
+<p>&#x8BBF;&#x95EE; <a href="https://idp.exmaple.edu.cn/idp/status" target="_blank">https://idp.exmaple.edu.cn/idp/status</a>
+&#x67E5;&#x770B; idP &#x72B6;&#x6001;&#x4FE1;&#x606F;&#xFF0C;&#x4E3B;&#x8981;&#x9700;&#x8981;&#x5728; Tomcat &#x4E2D;&#x589E;&#x52A0; jstl &#x7684;jar&#x5305;</p>
+<p>&#x9ED8;&#x8BA4;&#x4E4B;&#x5141;&#x8BB8;&#x672C;&#x673A;&#x8BBF;&#x95EE;&#xFF0C;&#x53EF;&#x4FEE;&#x6539; <code>idp.home/conf/access-control.xml</code> &#x6765;&#x589E;&#x52A0;&#x5141;&#x8BB8;&#x8BBF;&#x95EE;&#x7684;&#x5730;&#x5740;&#x3002; </p>
+<h4 id="%E6%97%B6%E9%97%B4%E5%90%8C%E6%AD%A5">&#x65F6;&#x95F4;&#x540C;&#x6B65;</h4>
+<p>idP &#x670D;&#x52A1;&#x961F;&#x65F6;&#x95F4;&#x654F;&#x611F;&#xFF0C;&#x56E0;&#x6B64;&#x52A1;&#x5FC5;&#x914D;&#x7F6E; ntp &#x670D;&#x52A1;&#x540C;&#x6B65;&#x65F6;&#x95F4;&#x3002;&#x4E0A;&#x6D77;&#x6559;&#x80B2;&#x57CE;&#x57DF;&#x7F51;&#x7528;&#x6237;&#x53EF;&#x4F7F;&#x7528; ntp.shec.edu.cn</p>
+<h4 id="%E6%9C%8D%E5%8A%A1%E7%9A%84%E5%90%AF%E5%81%9C">&#x670D;&#x52A1;&#x7684;&#x542F;&#x505C;</h4>
+<p>Tomcat&#x670D;&#x52A1;&#x7684;&#x542F;&#x505C;</p>
+<pre><code>TOMCAT_HOME/bin/startup.sh
+TOMCAT_HOME/bin/shutdown.sh
+</code></pre><p>Apache&#x670D;&#x52A1;&#x7684;&#x542F;&#x505C;</p>
+<pre><code>Service start httpd
+Service stop httpd
+</code></pre><p>&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x4E3A;&#x7CFB;&#x7EDF;&#x81EA;&#x52A8;&#x542F;&#x52A8;&#x670D;&#x52A1;&#xFF0C;&#x4ECD;&#x4EE5; CentOS 6 &#x4E3A;&#x4F8B;</p>
+<pre><code>Chkconfig httpd on
+Chkconfig ntpd on
+</code></pre><p>&#x4FEE;&#x6539;<code>/etc/rc.local</code>
+&#x6DFB;&#x52A0;</p>
+<pre><code>TOMACT_HOME/bin/startup.sh
+</code></pre>
+                    
+                    </section>
+                
+                
+                </div>
+            </div>
+        </div>
+
+        
+        <a href="../install/idP2.html" class="navigation navigation-prev " aria-label="Previous page: idP 2 安装"><i class="fa fa-angle-left"></i></a>
+        
+        
+        <a href="../install/idP2_upgrade_idP3.html" class="navigation navigation-next " aria-label="Next page: 从 idP2 更新至 idP3"><i class="fa fa-angle-right"></i></a>
+        
+    </div>
+</div>
+
+        
+<script src="../gitbook/app.js"></script>
+
+<script>
+require(["gitbook"], function(gitbook) {
+    var config = {"fontSettings":{"theme":null,"family":"sans","size":2}};
+    gitbook.start(config);
+});
+</script>
+
+        
+    </body>
+    
+</html>
