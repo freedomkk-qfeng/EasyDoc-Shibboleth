@@ -19,7 +19,7 @@ idP 能够在认证时去读取用户的身份属性信息，从而提供给应�
     </resolver:AttributeDefinition>
 ```
 
-这里的xsi:type="enc:SAML2String" name="urn:oid:2.5.4.2"，需要遵循联盟内的属性标准，详细内容参见附件《跨校认证系统属性规范草案v2》
+这里的xsi:type="enc:SAML2String" name="urn:oid:2.5.4.2"，需要遵循联盟内的属性标准，可与联盟的管理单位联系确认。
 
 ##### 采用 ldap 获取属性
 修改属性连接器配置，此处为 ```generic``` ,t添加 ldap 相关配置信息。如果 ldap 查询响应过慢会导致认证出错，则应增加 ```searchTimeLimit="30000"``` 限制查询时间，保障至少认证通过。

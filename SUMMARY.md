@@ -23,7 +23,7 @@
    * [属性获取配置](idP2/idpAttr.md)
    * [属性过滤配置](idP2/idpFilter.md)
    * [relying-party 配置](idP2/idprely_party.md)
-   * [idp 注册](idP2/metadata.md)
+   * [idp 注册](idP2/idpMetadata.md)
 * [idP 3 配置](idP3/README.md)
    * [认证配置](idP3/idpAuth.md)
 * [sp 配置](sp/README.md)
