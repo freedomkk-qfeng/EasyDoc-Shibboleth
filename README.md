@@ -15,3 +15,9 @@ https://wiki.shibboleth.net/confluence/display/SHIB2/Home
 因此，本项目的目的在于创建一个简单的，易于阅读和理解的Shibboleth部署文档，以便于Shibboleth的使用者入门，部署和简单的维护。
 
 想要了解更细节的内容，还是请参照官方的文档。
+
+#### 参与
+
+这个文档使用 gitbook 撰写，内容是开源的。项目见 https://github.com/freedomkk-qfeng/EasyDoc-Shibboleth
+如果对文档有什么建议和需求，都可以在这个项目下提 issue，我们会根据需求不断完善文档。当然 PR 是永远欢迎的！
+

@@ -27,5 +27,8 @@
 * [idP 3 配置](idP3/README.md)
    * [认证配置](idP3/idpAuth.md)
 * [sp 配置](sp/README.md)
+   * [主配置](sp/sp_shibboleth2.md)
    * [属性过滤器](sp/sp_attribute_map.md)
+   * [sp 注册](sp/spMetadata.md)
+   * [使用 sp](sp/spUse.md)
 
